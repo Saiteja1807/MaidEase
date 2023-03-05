@@ -18,7 +18,7 @@ const BreakpointSlides: ResponsiveType = {
   },
 }
 
-export default function Page() {
+export default function HomePageImageSlider() {
   return (
     <Carousel
       responsive={BreakpointSlides}
@@ -33,7 +33,7 @@ export default function Page() {
         priority
         layout="responsive"
         width={700}
-        height={475}
+        height={600}
       />
       <Image
         alt=""
@@ -41,7 +41,7 @@ export default function Page() {
         priority
         layout="responsive"
         width={700}
-        height={475}
+        height={600}
       />
       <Image
         alt=""
@@ -49,21 +49,21 @@ export default function Page() {
         priority
         layout="responsive"
         width={700}
-        height={475}
+        height={600}
       />
       <Image
         alt=""
         src="/images/PetCare1.jpeg"
         layout="responsive"
         width={700}
-        height={475}
+        height={600}
       />
       <Image
         alt=""
         src="/images/Laundry1.jpeg"
         layout="responsive"
         width={700}
-        height={475}
+        height={600}
       />
     </Carousel>
   )
