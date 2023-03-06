@@ -29,7 +29,9 @@ function Login() {
                 </div>
                 <div className='flex justify-center py-4'>
                     <p className='text-gray-500'>Don't have an account?</p>
-                    <p className='text-indigo-600 hover:text-indigo-500 ml-2'>Sign Up</p>
+                    <div className='text-indigo-600 hover:text-indigo-500 ml-2'>
+                        <a href='./Registration'>
+                        Sign Up</a></div>
                 </div>
             </form>
         </div>

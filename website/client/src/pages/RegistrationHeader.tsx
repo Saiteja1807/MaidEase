@@ -8,7 +8,7 @@ export default function RegistrationHeader() {
                 <div className="flex items-center justify-between mx-auto max-w-7xl">
                     <Link href="/">
                         <span className="text-2xl font-bold text-purple-600 font-serif">
-                            <img src="/images/Logo.jpg"></img>
+                           <a href='./index'><img src="/images/Logo.jpg"></img></a>
                         </span>
                     </Link>
                     <div className="flex items-center space-x-1">
@@ -26,6 +26,5 @@ export default function RegistrationHeader() {
                 </div>
             </header>
         </div>
-
     )
 }
