@@ -1,7 +1,17 @@
+import Footer from "./Footer";
+import Header from "./Header";
+import HomePageImageSlider from "./homePageImageSlider";
+import HomePageContactUs from "./homePageContactUs";
+import HomePageDescription from "./HomePageDescription";
+
 export default function Home() {
   return (
     <>
-      <h1 className="text-3xl text-center">hello</h1>
+      <Header/>
+      <HomePageImageSlider/>
+      <HomePageDescription/>
+      <HomePageContactUs/>
+      <Footer/>
     </>
   )
 }
