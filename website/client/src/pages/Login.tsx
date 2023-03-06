@@ -2,14 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import AuthImg from '../../public/images/Login.jpeg'
 import router, { useRouter } from 'next/router'
-import { on } from 'events'
-
-// function onLogin(){
-//     console.log('onLogin');
-//     location.href = "./DevelopmentInProgress";
-// }
-
-
 
 function Login() {
 
