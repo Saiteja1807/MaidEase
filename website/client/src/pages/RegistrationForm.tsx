@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import Modal from 'react-modal';
+
 import router, { useRouter } from 'next/router'
 import { on } from 'events'
 const RegistrationForm = () => {
@@ -10,7 +11,19 @@ const RegistrationForm = () => {
     userEmail: '',
     pin: '',
   });
-
+  const customStyles = {
+    overlay: {
+       backgroundColor: 'rgba(0, 0, 0, 0.6)'
+    },
+    content: {
+       top: '50%',
+       left: '50%',
+       right: 'auto',
+       bottom: 'auto',
+       marginRight: '-50%',
+       transform: 'translate(-50%, -50%)'
+    }
+  }
   return (
     <section className='h-full py-4 gradient-form bg-gray-200 py-0'>
       <div className='container py-0 pl-64 h-full'>
@@ -62,10 +75,11 @@ const RegistrationForm = () => {
                       <button className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white'
                           type='button'
                         onClick={() => setIsOpen(true)}>Sign up</button>
-                        <Modal 
+                        
+                        <Modal style={customStyles}
                         isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
-                            <h1>Modal Content</h1>
-                            <button className='border w-200 my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white'
+                            <h1>Yoy can login now!</h1>
+                            <button className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white'
                             type='button'
                             onClick={() => router.push("./Login")}>Login</button>
                         </Modal>
