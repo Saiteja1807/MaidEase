@@ -3,6 +3,7 @@ import Image from 'next/image'
 import AuthImg from '../../public/images/Login.jpeg'
 import router, { useRouter } from 'next/router'
 
+
 function Login() {
 
     const router = useRouter();

@@ -19,6 +19,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/modal.js", "src/pages/modal.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/modal.js", "src/pages/modal.js", "src/pages/RegistrationForm.jsx"],
   "exclude": ["node_modules"]
 }
