@@ -1,8 +1,24 @@
 import React from 'react'
 import Image from 'next/image'
 import AuthImg from '../../public/images/Login.jpeg'
+import router, { useRouter } from 'next/router'
+import { on } from 'events'
+
+// function onLogin(){
+//     console.log('onLogin');
+//     location.href = "./DevelopmentInProgress";
+// }
+
+
 
 function Login() {
+
+    const router = useRouter();
+    const onLogin = () =>  {
+        console.log('Free pizza!');
+        console.log('connecttion successful');
+    }
+
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 h-screen w-full'>
         <div className='hidden sm:block'>
@@ -22,7 +38,10 @@ function Login() {
                     <label>Password</label>
                     <input className='border p-2' type="password" />
                 </div>
-                <button className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white'>Sign In</button>
+                <div className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-center' > 
+                <a onClick={() => router.push("./DevelopmentInProgress")}>  
+                    Sign In</a>
+                    </ div>
                 <div className='flex justify-between'>
                     <p className='flex items-center'><input className='mr-2' type="checkbox" /> Remember Me</p>
                     <p className='text-indigo-600 hover:text-indigo-500'>Forgot Password?</p>
