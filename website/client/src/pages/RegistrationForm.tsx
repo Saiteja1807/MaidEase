@@ -3,6 +3,12 @@ import Modal from 'react-modal';
 
 import router, { useRouter } from 'next/router'
 import { on } from 'events'
+
+
+function loadRegistrationPage(){
+  location.href = "/Login"
+}
+
 const RegistrationForm = () => {
   const [isOpen, setIsOpen] = useState(false)
   
@@ -44,6 +50,7 @@ const RegistrationForm = () => {
                           className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
                           placeholder='Full Name'
                           name='userName'
+                          
                         />
                       </div>
                       <div className='mb-4'>
@@ -52,6 +59,7 @@ const RegistrationForm = () => {
                           className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
                           placeholder='Email Address'
                           name='userEmail'
+
                         />
                       </div>
                       <div className='mb-4'>
@@ -77,7 +85,7 @@ const RegistrationForm = () => {
                         
                         <Modal style={customStyles}
                         isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
-                            <h1>Yoy can login now!</h1>
+                            <h1>You can login now!</h1>
                             <button className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white'
                             type='button'
                             onClick={() => router.push("./Login")}>Login</button>
@@ -86,9 +94,11 @@ const RegistrationForm = () => {
                       <div className='flex items-center justify-between pb-6'>
                         <p className='mb-0 mr-2'>Do you have an account?</p>
                         <button
+                          onClick={loadRegistrationPage}
                           type='button'
                           className='inline-block px-6 py-2 border-2 border-indigo-600 text-indigo-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out'
                         >
+                          
                           Log In
                         </button>
                       </div>
