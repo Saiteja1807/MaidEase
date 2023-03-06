@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
 
+function loadHomePage(){
+    location.href = "./"
+}
+
 export default function Header() {
     return (
         <div>
@@ -8,7 +12,7 @@ export default function Header() {
                 <div className="flex items-center justify-between mx-auto max-w-7xl">
                     <Link href="/">
                         <span className="text-2xl font-bold text-purple-600 font-serif">
-                            <img src="/images/Logo.jpg"></img>
+                        <img src="/images/Logo.jpg" onClick={loadHomePage}></img>
                         </span>
                     </Link>
                     <div className="flex items-center space-x-1">

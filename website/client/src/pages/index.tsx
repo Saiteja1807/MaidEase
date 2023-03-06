@@ -1,6 +1,6 @@
-import Footer from "./Footer";
-import Header from "./Header";
-import HomePageImageSlider from "./homePageImageSlider";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
+import HomePageImageSlider from "./HomePageImageSlider";
 import HomePageContactUs from "./homePageContactUs";
 import HomePageDescription from "./HomePageDescription";
 
