@@ -1,10 +1,29 @@
 import React, { useEffect, useState } from 'react';
+import styles from '../styles/Home.module.css';
+import Modal from 'react-modal';
+
+import router, { useRouter } from 'next/router'
+import { on } from 'events'
 const RegistrationForm = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  
   const [payload, setPayload] = useState({
     userEmail: '',
     pin: '',
   });
-
+  const customStyles = {
+    overlay: {
+       backgroundColor: 'rgba(0, 0, 0, 0.6)'
+    },
+    content: {
+       top: '50%',
+       left: '50%',
+       right: 'auto',
+       bottom: 'auto',
+       marginRight: '-50%',
+       transform: 'translate(-50%, -50%)'
+    }
+  }
   return (
     <section className='h-full py-4 gradient-form bg-gray-200 py-0'>
       <div className='container py-0 pl-64 h-full'>
@@ -52,13 +71,18 @@ const RegistrationForm = () => {
                           name='cPassword'
                         />
                       </div>
-                      <div className='text-center mb-4'>
-                        <button
-                          className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white'
+                      <div>
+                      <button className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white'
                           type='button'
-                        >
-                          Sign Up
-                        </button>
+                        onClick={() => setIsOpen(true)}>Sign up</button>
+                        
+                        <Modal style={customStyles}
+                        isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
+                            <h1>Yoy can login now!</h1>
+                            <button className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white'
+                            type='button'
+                            onClick={() => router.push("./Login")}>Login</button>
+                        </Modal>
                       </div>
                       <div className='flex items-center justify-between pb-6'>
                         <p className='mb-0 mr-2'>Do you have an account?</p>
