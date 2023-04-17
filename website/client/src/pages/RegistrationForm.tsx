@@ -1,5 +1,10 @@
+
+
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-modal';
+
+
+
 
 import router, { useRouter } from 'next/router'
 import { on } from 'events'
@@ -9,7 +14,10 @@ function loadRegistrationPage(){
   location.href = "/Login"
 }
 
+
 const RegistrationForm = () => {
+
+
   const [isOpen, setIsOpen] = useState(false)
   
   const [payload, setPayload] = useState({
@@ -29,7 +37,13 @@ const RegistrationForm = () => {
        transform: 'translate(-50%, -50%)'
     }
   }
+
+  
+
   return (
+
+
+    
     <section className='h-full py-4 gradient-form bg-gray-200 py-0'>
       <div className='container py-0 pl-64 h-full'>
         <div className=' flex justify-center items-center flex-wrap h-full g-6 text-gray-800'>
@@ -40,17 +54,58 @@ const RegistrationForm = () => {
                   <div className='md:p-12 md:mx-6'>
                     <div className='text-center'>
                     </div>
-                    <form>
+                    <form >
                       <p className='mb-4'>
                         Please Sign Up if you don't have an account
                       </p>
                       <div className='mb-4'>
                       <input
-                          type='Name'
+                          type='firstName'
                           className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
-                          placeholder='Full Name'
-                          name='userName'
+                          placeholder='First Name'
+                          name='firstName'
                           
+                        />
+                      </div>
+                      <div className='mb-4'>
+                      <input
+                          type='middleName'
+                          className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
+                          placeholder='Middle Name'
+                          name='middleName'
+                          
+                        />
+                      </div>
+                      <div className='mb-4'>
+                      <input
+                          type='lastName'
+                          className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
+                          placeholder='Last Name'
+                          name='lastName'                         
+                        />
+                      </div>
+                      <div className='mb-4'>
+                      <input
+                          type='addressLine'
+                          className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
+                          placeholder='Street Address and Apartment number'
+                          name='addressLine'                         
+                        />
+                      </div>
+                      <div className='mb-4'>
+                      <input
+                          type='city'
+                          className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
+                          placeholder='City'
+                          name='city'                         
+                        />
+                      </div>
+                      <div className='mb-4'>
+                      <input
+                          type='country'
+                          className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
+                          placeholder='Country'
+                          name='country'                         
                         />
                       </div>
                       <div className='mb-4'>
@@ -59,6 +114,7 @@ const RegistrationForm = () => {
                           className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
                           placeholder='Email Address'
                           name='userEmail'
+                          required
 
                         />
                       </div>
@@ -68,6 +124,7 @@ const RegistrationForm = () => {
                           className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
                           placeholder='Password'
                           name='password'
+                          id = 'password'
                         />
                       </div>
                       <div className='mb-4'>
@@ -76,7 +133,8 @@ const RegistrationForm = () => {
                           className='form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
                           placeholder='Confirm Password'
                           name='cPassword'
-                        />
+                          id="confirm_password" /> <span id='message'></span>
+                        
                       </div>
                       <div>
                       <button className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white'
