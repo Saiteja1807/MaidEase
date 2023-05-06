@@ -25,9 +25,9 @@ The goal of this program is to deliver all essential household services on a sin
 -> Gets A1 service for little to no subscription fees.<br/>
 
 # Note:
--> Final Presentation folder:<br/>
-    includes all the documents presented at the time of Final Presentation held on 05/09/2023.<br/>
--> Documentation Set folder:<br/>
-    includes all the documents representing MaidEase business idea.<br/>
--> website folder:<br/>
-    includes the source code developed in Spring 2023.<br/>
+-> ** Final Presentation folder: **<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;includes all the documents presented at the time of Final Presentation held on 05/09/2023.<br/>
+-> ** Documentation Set folder: **<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;includes all the documents representing MaidEase business idea.<br/>
+-> ** website folder: **<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;includes the source code developed in Spring 2023.<br/>
