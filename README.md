@@ -17,11 +17,14 @@ There are numerous platforms that provide customers individual household service
 The goal of this program is to deliver all essential household services on a single platform, making life easier for users, particularly busy professionals, and frequent travelers. This application aids the service provider in promoting and growing his company and attracting a growing number of clients.
 
 # Project Objectives:
-	List all the household service providers.
-	Make it simple for customers to access all services on one platform
-	Offer round-the-clock customer care,
-	Promotes small businesses.
-	Act as a middleman between service suppliers and clients.
-	Gets A1 service for little to no subscription fees.
+-> List all the household service providers.
+-> Make it simple for customers to access all services on one platform
+-> Offer round-the-clock customer care,
+-> Promotes small businesses.
+-> Act as a middleman between service suppliers and clients.
+-> Gets A1 service for little to no subscription fees.
 
-
+# Note:
+Final Presentation folder includes all the documnets presented at the time of Final Presentation held on 05/09/2023.
+Documentation Set folder includes all the documents representing MaidEase business idea.
+website folder includes the source code developed in Spring 2023
