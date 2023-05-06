@@ -1,1 +1,27 @@
-# MaidEase
+# Team 1: Computer Science Project 1: MaidEase
+
+Project Manager: Sai Teja Malladi
+Project Owner: Jahid Hassan
+Lead Business Analyst: Bhakti Palkar
+Lead Developer: Tahera Shaikh
+Software Developer: Nidhi Berde
+QA Analyst: Rushda Mansuri
+Software Tester: Amala Natu
+
+# Background to the Proposed Work:
+There are numerous platforms that provide customers individual household services, but they are not always available. Even if some services are now in operation, they lack a website or other online platform to advertise their offerings. Therefore, MaidEase enters the picture to address this significant issue. Anyone can use this program, whether they are a working professional or a frequent traveler, as the consumer receives all household services on one platform. Additionally, we offer a significant platform for service providers to list their company and draw in new clients.
+ Many people's life will be made easier by this application. The customer will receive the services he wants, and the service provider will continue to add new clients.
+ If this project is unsuccessful in any way and is not completed, the median between customers and household service providers will not be determined. Customers will always be looking for these services nearby, so the service provider won't see an increase in business.
+
+# Vision:
+The goal of this program is to deliver all essential household services on a single platform, making life easier for users, particularly busy professionals, and frequent travelers. This application aids the service provider in promoting and growing his company and attracting a growing number of clients.
+
+# Project Objectives:
+	List all the household service providers.
+	Make it simple for customers to access all services on one platform
+	Offer round-the-clock customer care,
+	Promotes small businesses.
+	Act as a middleman between service suppliers and clients.
+	Gets A1 service for little to no subscription fees.
+
+
