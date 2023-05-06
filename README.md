@@ -1,12 +1,12 @@
 # Team 1: Computer Science Project 1: MaidEase
 
-Project Manager: Sai Teja Malladi
-Project Owner: Jahid Hassan
-Lead Business Analyst: Bhakti Palkar
-Lead Developer: Tahera Shaikh
-Software Developer: Nidhi Berde
-QA Analyst: Rushda Mansuri
-Software Tester: Amala Natu
+Project Manager: Sai Teja Malladi<br/>
+Project Owner: Jahid Hassan<br/>
+Lead Business Analyst: Bhakti Palkar<br/>
+Lead Developer: Tahera Shaikh<br/>
+Software Developer: Nidhi Berde<br/>
+QA Analyst: Rushda Mansuri<br/>
+Software Tester: Amala Natu<br/>
 
 # Background to the Proposed Work:
 There are numerous platforms that provide customers individual household services, but they are not always available. Even if some services are now in operation, they lack a website or other online platform to advertise their offerings. Therefore, MaidEase enters the picture to address this significant issue. Anyone can use this program, whether they are a working professional or a frequent traveler, as the consumer receives all household services on one platform. Additionally, we offer a significant platform for service providers to list their company and draw in new clients.
