@@ -28,3 +28,17 @@ The goal of this program is to deliver all essential household services on a sin
 -> Final Presentation folder: includes all the documents presented at the time of Final Presentation held on 05/09/2023.<br/>
 -> Documentation Set folder: includes all the documents representing MaidEase business idea.<br/>
 -> website folder: includes the source code developed in Spring 2023.<br/>
+
+# Build & Deployment Procedures:
+-> Clone this repository to your local machine.
+-> Open the server folder in command line and run the following command: 
+	  npm install express 
+	  npm install cors 
+	  npm install mongoose
+	  npm install bcryptjs
+	  npm install jsonwebtpken
+-> Open the client folder in command line and run the following command:	
+   npm install
+-> To run client code use command npm start
+-> To run server code use command npx nodemon index.js
+
