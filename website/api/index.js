@@ -14,7 +14,7 @@ app.use(cors(
     }
 ));
 
-mongoose.connect('mongodb+srv://maid:D9xT56HbXoH9d3Mw@cluster0.n1m7j4f.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://rushda:KJfX7lDbff13jmXU@cluster0.kimarnf.mongodb.net/?retryWrites=true&w=majority')
 
 const authenticate = async (req, res, next) => {
     try {
