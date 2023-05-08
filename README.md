@@ -29,16 +29,16 @@ The goal of this program is to deliver all essential household services on a sin
 -> Documentation Set folder: includes all the documents representing MaidEase business idea.<br/>
 -> website folder: includes the source code developed in Spring 2023.<br/>
 
-# Build & Deployment Procedures:
--> Clone this repository to your local machine.
--> Open the server folder in command line and run the following command: 
-	  npm install express 
-	  npm install cors 
-	  npm install mongoose
-	  npm install bcryptjs
-	  npm install jsonwebtpken
--> Open the client folder in command line and run the following command:	
-   npm install
--> To run client code use command npm start
--> To run server code use command npx nodemon index.js
+# Build & Deployment Procedures:<br/>
+-> Clone this repository to your local machine.<br/>
+-> Open the server folder in command line and run the following command: <br/>
+	  npm install express <br/>
+	  npm install cors <br/>
+	  npm install mongoose <br/>
+	  npm install bcryptjs <br/>
+	  npm install jsonwebtpken <br/>
+-> Open the client folder in command line and run the following command:<br/>	
+   npm install<br/>
+-> To run client code use command npm start<br/>
+-> To run server code use command npx nodemon index.js<br/>
 
