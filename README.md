@@ -5,6 +5,7 @@ Project Owner: Jahid Hassan<br/>
 Lead Business Analyst: Bhakti Palkar<br/>
 Lead Developer: Tahera Shaikh<br/>
 Software Developer: Nidhi Berde<br/>
+Software Developer: Manish Avasarala<br/>
 QA Analyst: Rushda Mansuri<br/>
 Software Tester: Amala Natu<br/>
 
